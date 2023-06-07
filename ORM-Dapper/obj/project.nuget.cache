@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NViJtzBHIFwIGXhHjAhzCLcryha1A3ESGXVSQm4FyiwvuWtBGwzbNoTV00FaHaQQ6LUVUKb7WCsJ23E7H8oOPQ==",
+  "dgSpecHash": "glGZ+WKWsthQuIh3H49id5e9n+CNyIYS67pxSoKJbcgZtAcjhu8hP9WMZfC6E50ZvLBxSQY+9TzCaJ1G8Mc1ig==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+  "projectFilePath": "C:\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Walters\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Walters\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

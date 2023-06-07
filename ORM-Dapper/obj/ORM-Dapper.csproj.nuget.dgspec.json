@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj": {}
+    "C:\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj": {
+    "C:\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+        "projectUniqueName": "C:\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
         "projectName": "ORM-Dapper",
-        "projectPath": "C:\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+        "projectPath": "C:\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
         "packagesPath": "C:\\Users\\Walters\\.nuget\\packages\\",
         "outputPath": "C:\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\obj\\",
         "projectStyle": "PackageReference",

@@ -17,7 +17,7 @@ namespace ORM_Dapper
         }
         public IEnumerable<Department>GetAllDepartments()
         {
-            _connection.Query<Department>("SELECT * FROM departments;")
+            return _connection.Query<Department>("SELECT * FROM Departments;");
         }
     }
 }
