@@ -10,5 +10,9 @@ namespace ORM_Dapper
     {
         IEnumerable<Product> GetAllProducts();
         void CreateProduct(int productId, string name, double price, int categoryID, int onSale, string stockLevel);//all stubbed out methods
+
+        void UpdateProductName(int productId, string name);//all stubbed out methods
+
+        void DeleteProduct(int productId);//all stubbed out methods
     }
 }

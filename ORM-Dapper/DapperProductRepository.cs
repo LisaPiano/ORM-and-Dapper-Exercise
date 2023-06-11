@@ -19,10 +19,23 @@ namespace ORM_Dapper
         }
         //++++++++++++++++++++++++++++++++++ENCAPSULATION
 
-        public void CreateProduct(int productID, string name, double price, int categoryId, int onSale, string stockLevel)
+        public void CreateProduct(int productId, string name, double price, int categoryId, int onSale, string stockLevel)
         {
             _connection.Execute("INSERT INTO Products (Name, Price, CategoryId) VALUES (@name, @price, @categoryId );",
             new {name = name, price = price, categoryId = categoryId });
+        }
+        //This delete method is part of the bonus
+        public void DeleteProduct(int productID)
+        {
+
+            _connection.Execute("DELETE FROM Sales WHERE ProductId = @productID;",
+          new { productID = productID });
+
+            _connection.Execute("DELETE FROM Products WHERE ProductID = @productID;",
+           new { productID = productID });
+
+            _connection.Execute("DELETE FROM Reviews WHERE ProductId = @productID;",
+           new { productID = productID });
         }
 
         public IEnumerable<Product> GetAllProducts()
@@ -32,6 +45,11 @@ namespace ORM_Dapper
            return  _connection.Query<Product>("SELECT * FROM Products;");//returns the IEnumerable <Product>
         }
 
-
+        //This is the first bonus
+        public void UpdateProductName(int productID, string updatedName)
+        {
+            _connection.Execute(" UPDATE Products SET Name = @updatedName WHERE ProductID = @productID ;",
+           new { productID = productID, updatedName = updatedName });
+        }
     }//end class
 }//end namespace

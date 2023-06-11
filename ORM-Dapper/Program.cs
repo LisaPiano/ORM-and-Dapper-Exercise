@@ -73,6 +73,16 @@ namespace ORM_Dapper
             {
                 Console.WriteLine($" Product ID: {product.ProductId} Product Name: {product.Name} Product Price: {product.Price} Product Category ID: {product.CategoryId} Product On Sale: {product.OnSale} Product Stock Level: {product.StockLevel}");
             }
+
+            //bonus parts--BUT I accidentally updated all the names in the database to "This is the New Name!". I'm so sorry! How do I revert?
+
+            var updateRepoProduct = new DapperProductRepository(conn);
+            updateRepoProduct.UpdateProductName(1, "This is the New Name!");
+
+            var deleteProduct = new DapperProductRepository(conn);
+            deleteProduct.DeleteProduct(1);
+
+
         }//end main method for the second part of the project 
     }//end program class
 }//end namespace
